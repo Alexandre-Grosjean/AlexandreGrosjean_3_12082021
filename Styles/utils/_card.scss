@@ -1,0 +1,18 @@
+@mixin restaurant-grid {
+
+    display: grid;
+    justify-items: space-evenly;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+@mixin cards {
+
+    border: 2px black solid;
+    color: black;
+    width: 200px;
+    height: 200px;
+
+}
