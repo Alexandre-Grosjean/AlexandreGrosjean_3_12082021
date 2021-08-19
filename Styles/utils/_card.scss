@@ -1,18 +1,54 @@
 @mixin restaurant-grid {
 
     display: grid;
-    justify-items: space-evenly;
+    justify-items: center;
     align-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-row-gap: 15px;
+    padding-bottom: 40px;
 
 }
 
 @mixin cards {
-
     border: 2px black solid;
-    color: black;
-    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px black;
+    width: 320px;
     height: 200px;
 
+}
+
+@mixin img-cards {
+    border-radius: 12px 12px 0 0;
+    width: 320px;
+    height: 140px;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin text-cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 310px;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-align: left;
+
+    .card-title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-town {
+        margin: 0;
+        padding: 0;
+    }
+
+    i {
+        float: right;
+    } 
 }

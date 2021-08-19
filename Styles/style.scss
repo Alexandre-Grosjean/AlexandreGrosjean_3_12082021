@@ -105,9 +105,14 @@ h1 {
 
 // card
 
-
 .list-restaurants {
     background-color: $color-sixth;
+}
+
+.list-restaurants-title {
+    margin: 0;
+    padding: 50px 0 40px 20px;
+    text-align: center;
 }
 
 .all-card-restaurants {
@@ -118,6 +123,14 @@ h1 {
 
 .link-card-restaurants {
     @include cards
+}
+
+.img-card {
+    @include img-cards
+}
+
+.info-card {
+    @include text-cards
 }
 
 // footer
@@ -144,4 +157,6 @@ footer {
     .choice-title {
         text-align: start;
     }
+
+
 }
