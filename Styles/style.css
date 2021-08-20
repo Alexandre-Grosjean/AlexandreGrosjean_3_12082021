@@ -33,12 +33,9 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-family: 'Shrikhand', cursive;
-  text-transform: lowercase;
-  font-size: 2.5em;
-  margin: 0;
-  padding: 10px;
+.img-title {
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 .localisation {
@@ -141,10 +138,9 @@ h1 {
 }
 
 .link-card-restaurants {
-  border: 2px black solid;
   border-radius: 15px;
-  -webkit-box-shadow: 0 0 3px black;
-          box-shadow: 0 0 3px black;
+  -webkit-box-shadow: 0 0 6px 0px grey;
+          box-shadow: 0 0 6px 0px grey;
   width: 320px;
   height: 200px;
 }
@@ -158,36 +154,70 @@ h1 {
 }
 
 .info-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 230px 80px;
+      grid-template-columns: 230px 80px;
+  -ms-grid-rows: 25px 25px;
+      grid-template-rows: 25px 25px;
   width: 310px;
   height: 55px;
-  padding: 0;
+  padding: 0 0 0 5px;
   margin: 0;
-  color: black;
   text-align: left;
+      grid-template-areas: "ti he1" "to he2";
 }
 
 .info-card .card-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ti;
   margin: 0;
-  padding: 0;
+  padding: 2px 0 0 10px;
+  color: #000;
 }
 
 .info-card .card-town {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: to;
   margin: 0;
-  padding: 0;
+  padding: 2px 0 0 10px;
+  color: #000;
 }
 
-.info-card i {
-  float: right;
+.info-card .empty-heart {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: he1;
+  font-size: 22px;
+  padding: 12px 0 0 20px;
+}
+
+.info-card .empty-heart .fa-heart {
+  color: #000;
+  opacity: 1;
+}
+
+.info-card .empty-heart .fa-heart:hover {
+  opacity: 0;
+}
+
+.info-card .full-heart {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: he1;
+  font-size: 22px;
+  padding: 12px 0 0 20px;
+}
+
+.info-card .full-heart .fa-heart {
+  opacity: 0;
+  color: pink;
+}
+
+.info-card .full-heart .fa-heart:hover {
+  opacity: 1;
 }
 
 footer {

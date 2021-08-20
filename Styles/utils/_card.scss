@@ -1,3 +1,5 @@
+@import '_colors.scss';
+
 @mixin restaurant-grid {
 
     display: grid;
@@ -11,9 +13,9 @@
 }
 
 @mixin cards {
-    border: 2px black solid;
+    // border: 2px black solid;
     border-radius: 15px;
-    box-shadow: 0 0 3px black;
+    box-shadow: 0 0 6px 0px grey;
     width: 320px;
     height: 200px;
 
@@ -28,27 +30,67 @@
 }
 
 @mixin text-cards {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 230px 80px;
+    grid-template-rows: 25px 25px;
     width: 310px;
     height: 55px;
-    padding: 0;
+    padding: 0 0 0 5px;
     margin: 0;
-    color: black;
     text-align: left;
+    grid-template-areas: 
+    "ti he1"
+    "to he2";
 
     .card-title {
+        grid-area: ti;
         margin: 0;
-        padding: 0;
+        padding: 2px 0 0 10px;
+        color: $color-initial;
     }
 
     .card-town {
+        grid-area: to;
         margin: 0;
-        padding: 0;
+        padding: 2px 0 0 10px;
+        color: $color-initial;
     }
 
-    i {
-        float: right;
-    } 
+    .empty-heart {
+        grid-area: he1;
+        font-size: 22px;
+        padding: 12px 0 0 20px;
+        
+        .fa-heart {
+            color: $color-initial;
+            opacity: 1;
+
+            &:hover {
+                opacity: 0;
+            }
+
+        }
+
+    }
+
+
+    .full-heart {
+        
+        grid-area: he1;
+        font-size: 22px;
+        padding: 12px 0 0 20px;
+        
+        
+
+        .fa-heart {
+
+            opacity: 0; 
+            color: $color-heart-full;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
 }
