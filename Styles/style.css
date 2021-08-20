@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:active {
@@ -151,6 +152,25 @@ body {
   height: 140px;
   padding: 0;
   margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new {
+  border: 0;
+  border-radius: 3px;
+  width: 70px;
+  height: 25px;
+  -webkit-box-shadow: 0 0 1px 1px grey;
+          box-shadow: 0 0 1px 1px grey;
+  background-color: rgba(146, 255, 255, 0.774);
+  color: darkslategrey;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  margin: 10px 0 0 230px;
+  padding: 0;
+  position: absolute;
 }
 
 .info-card {
@@ -175,6 +195,8 @@ body {
   margin: 0;
   padding: 2px 0 0 10px;
   color: #000;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .info-card .card-town {
@@ -182,8 +204,10 @@ body {
   -ms-grid-column: 1;
   grid-area: to;
   margin: 0;
-  padding: 2px 0 0 10px;
+  padding: 0 0 0 10px;
   color: #000;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .info-card .empty-heart {
@@ -191,7 +215,7 @@ body {
   -ms-grid-column: 2;
   grid-area: he1;
   font-size: 22px;
-  padding: 12px 0 0 20px;
+  padding: 12px 0 0 30px;
 }
 
 .info-card .empty-heart .fa-heart {
@@ -208,12 +232,12 @@ body {
   -ms-grid-column: 2;
   grid-area: he1;
   font-size: 22px;
-  padding: 12px 0 0 20px;
+  padding: 12px 0 0 30px;
 }
 
 .info-card .full-heart .fa-heart {
+  color: brown;
   opacity: 0;
-  color: pink;
 }
 
 .info-card .full-heart .fa-heart:hover {

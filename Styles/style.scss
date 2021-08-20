@@ -3,6 +3,7 @@
 
 a {
     text-decoration: none;
+    color: black;
 
     &:active {
         color: black;
@@ -123,6 +124,10 @@ body {
 
 .img-card {
     @include img-cards
+}
+
+.new {
+    @include nouveau;
 }
 
 .info-card {
