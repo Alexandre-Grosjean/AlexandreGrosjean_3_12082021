@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: $color-primary;
+    background-color: $color-body;
     margin: 0;
     text-align: center;
     
@@ -39,7 +39,7 @@ body {
 
 .localisation {
     box-shadow: inset 0  7px 4px -6px rgb(196, 196, 196);
-    background-color: $color-fifth;
+    background-color: $color-one;
     padding: 10px;
     font-size: 0.9em;
 }
@@ -48,7 +48,7 @@ body {
 
 .top-main-page {
     padding: 2rem;
-    background-color: $color-sixth;
+    background-color: $color-two;
 
     h2 {
         margin: 0;
@@ -61,7 +61,7 @@ body {
     border-radius: 20px;
     padding: 10px 20px 10px 20px;
     text-align: center;
-    background-image: $color-third;
+    background-image: $color-gradient-box;
     box-shadow: 0px 3px 7px grey;
     color : white;
 }
@@ -87,12 +87,12 @@ body {
     display: flex;
     justify-content: left;
     border: none;
-    box-shadow: $color-secondary;
+    box-shadow: $color-shadow-box;
     border-radius: 20px;
     margin: 1rem;
     padding: 20px 40px 20px 40px;
     width: 13rem;
-    background-color: $color-sixth;
+    background-color: $color-two;
 }
 
 .choice-text {
@@ -103,7 +103,7 @@ body {
 // card
 
 .list-restaurants {
-    background-color: $color-sixth;
+    background-color: $color-two;
 }
 
 .list-restaurants-title {
@@ -126,8 +126,26 @@ body {
     @include img-cards
 }
 
+#img-card-1 {
+    object-position: 50% -50px;
+}
+
+#img-card-2 {
+    object-position: 50% -140px;
+}
+
+#img-card-3 {
+    object-position: 50% -50px;
+}
+
+#img-card-4 {
+    object-position: 50% -50px;
+}
+
 .new {
+
     @include nouveau;
+
 }
 
 .info-card {
@@ -138,7 +156,7 @@ body {
 
 footer {
     border: none;
-    background-color: $color-seventh;
+    background-color: $color-three;
 }
 
 // Responsive

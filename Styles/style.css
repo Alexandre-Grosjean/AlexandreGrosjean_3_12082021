@@ -143,34 +143,51 @@ body {
   -webkit-box-shadow: 0 0 6px 0px grey;
           box-shadow: 0 0 6px 0px grey;
   width: 320px;
-  height: 200px;
+  height: 230px;
 }
 
 .img-card {
   border-radius: 12px 12px 0 0;
   width: 320px;
-  height: 140px;
+  height: 170px;
   padding: 0;
   margin: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+#img-card-1 {
+  -o-object-position: 50% -50px;
+     object-position: 50% -50px;
+}
+
+#img-card-2 {
+  -o-object-position: 50% -140px;
+     object-position: 50% -140px;
+}
+
+#img-card-3 {
+  -o-object-position: 50% -50px;
+     object-position: 50% -50px;
+}
+
+#img-card-4 {
+  -o-object-position: 50% -50px;
+     object-position: 50% -50px;
+}
+
 .new {
   border: 0;
-  border-radius: 3px;
-  width: 70px;
-  height: 25px;
+  border-radius: 2px;
   -webkit-box-shadow: 0 0 1px 1px grey;
           box-shadow: 0 0 1px 1px grey;
-  background-color: rgba(146, 255, 255, 0.774);
-  color: darkslategrey;
+  background-color: #99e2d0;
+  color: #1b6150;
   font-size: 13px;
   font-weight: normal;
-  text-align: center;
-  margin: 10px 0 0 230px;
-  padding: 0;
   position: absolute;
+  padding: 5px 10px 5px 10px;
+  margin-left: 230px;
 }
 
 .info-card {
@@ -185,7 +202,7 @@ body {
   padding: 0 0 0 5px;
   margin: 0;
   text-align: left;
-      grid-template-areas: "ti he1" "to he2";
+      grid-template-areas: "ti he1" "to he1";
 }
 
 .info-card .card-title {
@@ -212,6 +229,7 @@ body {
 
 .info-card .empty-heart {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: he1;
   font-size: 22px;
@@ -229,6 +247,7 @@ body {
 
 .info-card .full-heart {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: he1;
   font-size: 22px;

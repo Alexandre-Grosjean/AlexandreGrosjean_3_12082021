@@ -16,13 +16,13 @@
     border-radius: 15px;
     box-shadow: 0 0 6px 0px grey;
     width: 320px;
-    height: 200px;
+    height: 230px;
 }
 
 @mixin img-cards {
     border-radius: 12px 12px 0 0;
     width: 320px;
-    height: 140px;
+    height: 170px;
     padding: 0;
     margin: 0;
     object-fit: cover;
@@ -30,18 +30,15 @@
 
 @mixin nouveau {
     border: 0;
-    border-radius: 3px;
-    width: 70px;
-    height: 25px;
+    border-radius: 2px;
     box-shadow: 0 0 1px 1px grey;
-    background-color: rgba(146, 255, 255, 0.774);
-    color: darkslategrey;
+    background-color: #99e2d0;
+    color: #1b6150;
     font-size: 13px;
     font-weight: normal;
-    text-align: center;
-    margin: 10px 0 0 230px;
-    padding: 0;
     position: absolute;
+    padding: 5px 10px 5px 10px ;
+    margin-left: 230px;
 }
 
 @mixin text-cards {
@@ -55,7 +52,7 @@
     text-align: left;
     grid-template-areas: 
     "ti he1"
-    "to he2";
+    "to he1";
 
     .card-title {
         grid-area: ti;
