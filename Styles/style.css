@@ -265,24 +265,46 @@ body {
 
 footer {
   border: none;
-  background-color: #575757;
+  background-color: #414141;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-@media screen and (max-width: 800px) {
-  .choice-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .choice-title {
-    text-align: start;
-  }
+.img-footer {
+  width: 100px;
+  margin: 20px 0 20px 20px;
+}
+
+.footer-list {
+  margin: 0 0 20px 20px;
+  padding: 0;
+  text-align: left;
+  color: white;
+}
+
+.footer-list .fa-utensils {
+  padding: 0 13px 0 0;
+  font-size: 13px;
+}
+
+.footer-list .fa-hands-helping {
+  padding: 0 10px 0 0;
+  font-size: 11px;
+}
+
+.footer-list a {
+  color: white;
+}
+
+.footer-list li {
+  padding: 0 0 5px 0;
 }
 /*# sourceMappingURL=style.css.map */
