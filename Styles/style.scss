@@ -81,22 +81,49 @@ body {
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+.choice-bubble {
+    margin: -4px 25px 0 -53px;
+    padding :  0 0 0 0;
+    width: 23px;
+    height: 23px;
+    font-size: 13px;
+    color: $color-two;
+    background: $color-bubble-choice;
+    border-radius: 50%;
+    position: absolute;
+
+    p {
+        margin: 4px 0 0 0;
+    }
+
 }
 
 .choice {
     display: flex;
     justify-content: left;
     border: none;
-    box-shadow: $color-shadow-box;
+    box-shadow: $color-choice;
     border-radius: 20px;
     margin: 1rem;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px 17px 40px;
     width: 13rem;
+    height: auto;
     background-color: $color-two;
+    text-align: center;
+
+    &:hover {
+        opacity: 0.9;
+        box-shadow: $color-choice-shadow;
+        color: $color-bubble-choice;
+    }
+
 }
 
 .choice-text {
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 0px;
 }
 

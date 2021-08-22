@@ -90,6 +90,23 @@ body {
           justify-content: space-evenly;
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+
+.choice-bubble {
+  margin: -4px 25px 0 -53px;
+  padding: 0 0 0 0;
+  width: 23px;
+  height: 23px;
+  font-size: 13px;
+  color: #f0f0f0;
+  background: #b64ee6;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.choice-bubble p {
+  margin: 4px 0 0 0;
 }
 
 .choice {
@@ -100,17 +117,26 @@ body {
       -ms-flex-pack: left;
           justify-content: left;
   border: none;
-  -webkit-box-shadow: 0px 3px 7px grey;
-          box-shadow: 0px 3px 7px grey;
+  -webkit-box-shadow: 0px 0.06px 1px grey;
+          box-shadow: 0px 0.06px 1px grey;
   border-radius: 20px;
   margin: 1rem;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px 17px 40px;
   width: 13rem;
+  height: auto;
   background-color: #f0f0f0;
+  text-align: center;
+}
+
+.choice:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 0.06px 3px 2px grey;
+          box-shadow: 0px 0.06px 3px 2px grey;
+  color: #b64ee6;
 }
 
 .choice-text {
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 0px;
 }
 
@@ -255,7 +281,7 @@ body {
 }
 
 .info-card .full-heart .fa-heart {
-  color: brown;
+  color: #b64ee6;
   opacity: 0;
 }
 
