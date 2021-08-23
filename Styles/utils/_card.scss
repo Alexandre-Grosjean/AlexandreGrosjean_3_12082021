@@ -12,6 +12,18 @@
 
 }
 
+@mixin restaurant-grid-phone {
+
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    padding-bottom: 40px;
+
+}
+
 @mixin cards {
     border-radius: 15px;
     box-shadow: 0 0 6px 0px grey;
@@ -68,24 +80,15 @@
         margin: 0;
         padding: 0 0 0 10px;
         color: $color-initial;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
     }
 
     .empty-heart {
+
         grid-area: he1;
-        font-size: 22px;
+        font-size: 21px;
         padding: 12px 0 0 30px;
-        
-        .fa-heart {
-            color: $color-initial;
-            opacity: 1;
-
-            &:hover {
-                opacity: 0;
-            }
-
-        }
 
     }
 
@@ -94,17 +97,20 @@
         
         grid-area: he1;
         font-size: 22px;
-        padding: 12px 0 0 30px;
+        padding: 12px 0 0px 30px;
         
         
 
         .fa-heart {
 
-            color: $color-bubble-choice;
+            background: $color-heart-full;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
             opacity: 0;
 
             &:hover {
                 opacity: 1;
+                transition: 0.3s;
             }
         }
     }

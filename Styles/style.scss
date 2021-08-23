@@ -215,27 +215,26 @@ footer {
     }
 
     li {
-        padding: 0 0 5px 0;;
+        padding: 0 0 5px 0;
     }
 }
 
 // Responsive
 
-// @media screen and (max-width: 1112px){
 
-// }
+@media screen and (max-width: 800px) {
 
-// @media screen and (max-width: 800px) {
+    .choice-top {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
 
-//     .choice-top {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//     }
+    .all-card-restaurants {
 
-//     .choice-title {
-//         text-align: start;
-//     }
+        @include restaurant-grid-phone
+    
+    }
 
 
-// }
+}
