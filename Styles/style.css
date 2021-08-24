@@ -253,35 +253,30 @@ body {
   font-weight: normal;
 }
 
-.info-card .empty-heart {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: he1;
-  font-size: 21px;
-  padding: 12px 0 0 30px;
+.info-card .fav-icon {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  margin: 10px 0 -10px 5px;
+  font-family: "Font Awesome 5 free";
 }
 
-.info-card .full-heart {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: he1;
-  font-size: 22px;
-  padding: 12px 0 0px 30px;
+.info-card .fav-icon .heart-icon {
+  font-size: 25px;
 }
 
-.info-card .full-heart .fa-heart {
+.info-card .fav-icon .heart-icon:before {
+  content: '\f004';
+  display: block;
+}
+
+.info-card .fav-icon .heart-icon:hover {
+  font-weight: 900;
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
-
-.info-card .full-heart .fa-heart:hover {
-  opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 footer {

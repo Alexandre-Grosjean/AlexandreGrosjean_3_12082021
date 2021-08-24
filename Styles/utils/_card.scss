@@ -84,35 +84,35 @@
         font-weight: normal;
     }
 
-    .empty-heart {
+    .fav-icon {
 
-        grid-area: he1;
-        font-size: 21px;
-        padding: 12px 0 0 30px;
+        display: inline-block;
+        position: relative;
+        width: 30px;
+        margin: 10px 0 -10px 5px;
+        font-family: "Font Awesome 5 free";
 
-    }
+        .heart-icon{
 
+            font-size: 25px;
 
-    .full-heart {
-        
-        grid-area: he1;
-        font-size: 22px;
-        padding: 12px 0 0px 30px;
-        
-        
+        }
 
-        .fa-heart {
+        .heart-icon:before {
+            content: '\f004';
+            display: block;
+        }
 
+        .heart-icon:hover {
+            
+            font-weight: 900;
             background: $color-heart-full;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            opacity: 0;
-
-            &:hover {
-                opacity: 1;
-                transition: 0.3s;
-            }
+            transition: 0.5s;
         }
     }
+
+    
 
 }
