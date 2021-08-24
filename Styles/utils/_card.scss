@@ -69,7 +69,7 @@
     .card-title {
         grid-area: ti;
         margin: 0;
-        padding: 2px 0 0 10px;
+        padding: 5px 0 0 10px;
         color: $color-initial;
         font-size: 16px;
         font-weight: bold;
@@ -78,7 +78,7 @@
     .card-town {
         grid-area: to;
         margin: 0;
-        padding: 0 0 0 10px;
+        padding: 2px 0 0 10px;
         color: $color-initial;
         font-size: 14px;
         font-weight: normal;
@@ -89,7 +89,7 @@
         display: inline-block;
         position: relative;
         width: 30px;
-        margin: 10px 0 -10px 5px;
+        margin: 10px 0 -10px 25px;
         font-family: "Font Awesome 5 free";
 
         .heart-icon{

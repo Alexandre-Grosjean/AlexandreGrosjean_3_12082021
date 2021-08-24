@@ -190,6 +190,7 @@ body {
 #img-card-2 {
   -o-object-position: 50% -140px;
      object-position: 50% -140px;
+  padding-bottom: 3px;
 }
 
 #img-card-3 {
@@ -200,6 +201,7 @@ body {
 #img-card-4 {
   -o-object-position: 50% -50px;
      object-position: 50% -50px;
+  padding-bottom: 3px;
 }
 
 .new {
@@ -236,7 +238,7 @@ body {
   -ms-grid-column: 1;
   grid-area: ti;
   margin: 0;
-  padding: 2px 0 0 10px;
+  padding: 5px 0 0 10px;
   color: #000;
   font-size: 16px;
   font-weight: bold;
@@ -247,7 +249,7 @@ body {
   -ms-grid-column: 1;
   grid-area: to;
   margin: 0;
-  padding: 0 0 0 10px;
+  padding: 2px 0 0 10px;
   color: #000;
   font-size: 14px;
   font-weight: normal;
@@ -257,7 +259,7 @@ body {
   display: inline-block;
   position: relative;
   width: 30px;
-  margin: 10px 0 -10px 5px;
+  margin: 10px 0 -10px 25px;
   font-family: "Font Awesome 5 free";
 }
 
