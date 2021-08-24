@@ -1,6 +1,11 @@
 @import 'utils/_colors.scss';
 @import 'utils/_card.scss';
 
+html {
+    max-width: 1920px;
+    margin: auto;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -26,7 +31,7 @@ body {
     align-content: center;
     background-color: $color-body;
     margin: 0;
-    text-align: center;
+    text-align: center
     
 }
 
@@ -64,6 +69,11 @@ body {
     background-image: $color-gradient-box;
     box-shadow: 0px 3px 7px grey;
     color : white;
+
+    &:hover {
+        opacity: 0.9;
+        box-shadow: $color-choice-shadow;
+    }
 }
 
 .choice-main-page {

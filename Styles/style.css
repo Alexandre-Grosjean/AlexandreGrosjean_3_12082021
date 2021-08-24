@@ -1,3 +1,8 @@
+html {
+  max-width: 1920px;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -68,6 +73,12 @@ body {
   color: white;
 }
 
+.btn_explore:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 0.06px 3px 2px grey;
+          box-shadow: 0px 0.06px 3px 2px grey;
+}
+
 .choice-main-page {
   border: none;
 }
@@ -100,7 +111,7 @@ body {
   height: 23px;
   font-size: 13px;
   color: #f0f0f0;
-  background: #b64ee6;
+  background: #9356dc;
   border-radius: 50%;
   position: absolute;
 }
@@ -132,7 +143,7 @@ body {
   opacity: 0.9;
   -webkit-box-shadow: 0px 0.06px 3px 2px grey;
           box-shadow: 0px 0.06px 3px 2px grey;
-  color: #b64ee6;
+  color: #9356dc;
 }
 
 .choice-text {
@@ -162,6 +173,7 @@ body {
       grid-template-rows: 1fr 1fr;
   grid-row-gap: 15px;
   padding-bottom: 40px;
+  margin: 0 8%;
 }
 
 .link-card-restaurants {
