@@ -75,8 +75,8 @@ body {
 
 .btn_explore:hover {
   opacity: 0.9;
-  -webkit-box-shadow: 0px 0.06px 3px 2px grey;
-          box-shadow: 0px 0.06px 3px 2px grey;
+  -webkit-box-shadow: 0px 0.06px 3px 2px gray;
+          box-shadow: 0px 0.06px 3px 2px gray;
 }
 
 .choice-main-page {
@@ -141,8 +141,8 @@ body {
 
 .choice:hover {
   opacity: 0.9;
-  -webkit-box-shadow: 0px 0.06px 3px 2px grey;
-          box-shadow: 0px 0.06px 3px 2px grey;
+  -webkit-box-shadow: 0px 0.06px 3px 2px gray;
+          box-shadow: 0px 0.06px 3px 2px gray;
   color: #9356dc;
 }
 
@@ -184,6 +184,12 @@ body {
   height: 230px;
 }
 
+.link-card-restaurants:hover {
+  -webkit-box-shadow: 0px 0.06px 3px 2px gray;
+          box-shadow: 0px 0.06px 3px 2px gray;
+  opacity: 0.9;
+}
+
 .img-card {
   border-radius: 12px 12px 0 0;
   width: 320px;
@@ -200,9 +206,10 @@ body {
 }
 
 #img-card-2 {
-  -o-object-position: 50% -140px;
-     object-position: 50% -140px;
-  padding-bottom: 3px;
+  -o-object-position: 50% -145px;
+     object-position: 50% -145px;
+  height: 160px;
+  padding-bottom: 7px;
 }
 
 #img-card-3 {
@@ -213,7 +220,8 @@ body {
 #img-card-4 {
   -o-object-position: 50% -50px;
      object-position: 50% -50px;
-  padding-bottom: 3px;
+  height: 160px;
+  padding-bottom: 7px;
 }
 
 .new {
@@ -238,7 +246,7 @@ body {
   -ms-grid-rows: 25px 25px;
       grid-template-rows: 25px 25px;
   width: 310px;
-  height: 55px;
+  height: 70px;
   padding: 0 0 0 5px;
   margin: 0;
   text-align: left;
@@ -338,7 +346,7 @@ footer {
   padding: 0 0 5px 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
   .choice-top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -30,6 +30,11 @@
     box-shadow: 0 0 6px 0px grey;
     width: 320px;
     height: 230px;
+
+    &:hover {
+        box-shadow: $color-choice-shadow;
+        opacity: 0.9;
+    }
 }
 
 @mixin img-cards {
@@ -59,7 +64,7 @@
     grid-template-columns: 230px 80px;
     grid-template-rows: 25px 25px;
     width: 310px;
-    height: 55px;
+    height: 70px;
     padding: 0 0 0 5px;
     margin: 0;
     text-align: left;

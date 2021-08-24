@@ -168,8 +168,9 @@ body {
 }
 
 #img-card-2 {
-    object-position: 50% -140px;
-    padding-bottom: 3px;
+    object-position: 50% -145px;
+    height: 160px;
+    padding-bottom: 7px;
 }
 
 #img-card-3 {
@@ -178,7 +179,8 @@ body {
 
 #img-card-4 {
     object-position: 50% -50px;
-    padding-bottom: 3px;
+    height: 160px;
+    padding-bottom: 7px;
 }
 
 .new {
@@ -234,7 +236,7 @@ footer {
 // Responsive
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
 
     .choice-top {
         flex-direction: column;
