@@ -273,7 +273,7 @@ body {
 .info-card .fav-icon .heart-icon:hover {
   font-weight: 900;
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: 0.5s;
   transition: 0.5s;
