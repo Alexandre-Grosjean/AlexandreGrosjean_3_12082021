@@ -294,11 +294,86 @@ body {
 
 .info-card .fav-icon .heart-icon:hover {
   font-weight: 900;
-  background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-animation-name: heart;
+          animation-name: heart;
+  -webkit-animation-duration: 350ms;
+          animation-duration: 350ms;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.2;
+    font-size: 25px;
+  }
+  25% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+  }
+  50% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.7;
+    font-size: 24px;
+  }
+  75% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.9;
+  }
+  100% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    font-size: 25px;
+  }
+}
+
+@keyframes heart {
+  0% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.2;
+    font-size: 25px;
+  }
+  25% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+  }
+  50% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.7;
+    font-size: 24px;
+  }
+  75% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.9;
+  }
+  100% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    font-size: 25px;
+  }
 }
 
 footer {

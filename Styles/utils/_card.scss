@@ -112,13 +112,58 @@
         .heart-icon:hover {
             
             font-weight: 900;
-            background: $color-heart-full;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition-duration: 350ms;
+            // background: $color-heart-full;
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            // transition-duration: 350ms;
+
+            animation-name: heart;
+            animation-duration: 350ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
 
         }
-        
+
+        @keyframes heart {
+
+            0% {
+                background: $color-heart-full;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0.2;
+                font-size: 25px;
+            }
+
+            25% {
+                background: $color-heart-full;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0.5;
+            }
+
+            50% {
+                background: $color-heart-full;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0.7;
+                font-size: 24px;
+            }
+
+            75% {
+                background: $color-heart-full;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0.9;
+            }
+
+            100% {
+                background: $color-heart-full;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 1;
+                font-size: 25px;
+            }
+        }
     }
 
     
