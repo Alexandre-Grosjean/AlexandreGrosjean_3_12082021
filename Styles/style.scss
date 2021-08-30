@@ -1,9 +1,10 @@
 @import 'utils/_colors.scss';
 @import 'utils/_card.scss';
+@import 'utils/menu';
 
 html {
-    max-width: 1920px;
     margin: auto;
+    max-width: 1920px;
 }
 
 a {
@@ -31,11 +32,13 @@ body {
     align-content: center;
     background-color: $color-body;
     margin: 0;
-    text-align: center
+    text-align: center;
     
 }
 
 // header
+
+
 
 .img-title {
     padding-top: 20px;
@@ -50,6 +53,7 @@ body {
 }
 
 // top main page
+
 
 .top-main-page {
     padding: 2rem;
@@ -69,6 +73,7 @@ body {
     background-image: $color-gradient-box;
     box-shadow: 0px 3px 7px grey;
     color : white;
+    cursor: pointer;
 
     &:hover {
         opacity: 0.9;
@@ -122,7 +127,8 @@ body {
     width: 13rem;
     height: auto;
     background-color: $color-two;
-    text-align: center;
+    text-align: center; 
+    cursor: pointer;
 
     &:hover {
         opacity: 0.9;
@@ -151,16 +157,16 @@ body {
 
 .all-card-restaurants {
 
-    @include restaurant-grid
+    @include restaurant-grid;
 
 }
 
 .link-card-restaurants {
-    @include cards
+    @include cards;
 }
 
 .img-card {
-    @include img-cards
+    @include img-cards;
 }
 
 #img-card-1 {
@@ -190,7 +196,7 @@ body {
 }
 
 .info-card {
-    @include text-cards
+    @include text-cards;
 }
 
 // footer
@@ -233,7 +239,44 @@ footer {
     }
 }
 
-// Responsive
+// Menu page
+
+@include return;
+
+@include img-menu;
+
+.full-page-menu {
+    background-color: $color-two;
+    border: 1px $color-two solid;
+    border-radius: 35px 35px 0 0;
+    margin: 0;
+}
+
+// title menu
+    
+@include title-menu;
+
+// choice menu
+
+.info-menu {
+    background-color: $color-two;
+    margin: 0;
+    padding: 0;
+}
+
+@include info-title;
+
+@include info-choice;
+
+// button for commande 
+
+@include validation-btn;
+
+
+
+
+
+// Responsive media queries
 
 
 @media screen and (max-width: 920px) {
@@ -242,6 +285,17 @@ footer {
         flex-direction: column;
         justify-items: center;
         align-items: center;
+    }
+    .choice-title {
+        margin: 0;
+        padding: 20px 0px 0px 25px;
+        text-align: left;
+    }
+
+    .list-restaurants-title {
+        margin: 0;
+        padding: 20px 0 20px 25px;
+        text-align: left;
     }
 
     .all-card-restaurants {
