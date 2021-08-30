@@ -238,6 +238,25 @@ footer {
     }
 }
 
+// Menu page
+
+.back-icon{
+
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    margin: 20px 0 0 -41%;
+    font-family: "Font Awesome 5 free";
+
+    .arrow-icon{
+
+        font-size: 25px;
+        color: rgb(112, 112, 112);
+        cursor: pointer;
+    }
+
+    
+}
 // Responsive
 
 

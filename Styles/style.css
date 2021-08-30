@@ -424,6 +424,20 @@ footer {
   padding: 0 0 5px 0;
 }
 
+.back-icon {
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  margin: 20px 0 0 -41%;
+  font-family: "Font Awesome 5 free";
+}
+
+.back-icon .arrow-icon {
+  font-size: 25px;
+  color: #707070;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 920px) {
   .choice-top {
     -webkit-box-orient: vertical;
