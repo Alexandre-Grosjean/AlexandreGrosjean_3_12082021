@@ -1,5 +1,6 @@
 @import 'utils/_colors.scss';
 @import 'utils/_card.scss';
+@import 'utils/menu';
 
 html {
     margin: auto;
@@ -156,16 +157,16 @@ body {
 
 .all-card-restaurants {
 
-    @include restaurant-grid
+    @include restaurant-grid;
 
 }
 
 .link-card-restaurants {
-    @include cards
+    @include cards;
 }
 
 .img-card {
-    @include img-cards
+    @include img-cards;
 }
 
 #img-card-1 {
@@ -195,7 +196,7 @@ body {
 }
 
 .info-card {
-    @include text-cards
+    @include text-cards;
 }
 
 // footer
@@ -240,24 +241,42 @@ footer {
 
 // Menu page
 
-.back-icon{
+@include return;
 
-    display: inline-block;
-    position: absolute;
-    width: 30px;
-    margin: 20px 0 0 -41%;
-    font-family: "Font Awesome 5 free";
+@include img-menu;
 
-    .arrow-icon{
-
-        font-size: 25px;
-        color: rgb(112, 112, 112);
-        cursor: pointer;
-    }
-
-    
+.full-page-menu {
+    background-color: $color-two;
+    border: 1px $color-two solid;
+    border-radius: 35px 35px 0 0;
+    margin: 0;
 }
-// Responsive
+
+// title menu
+    
+@include title-menu;
+
+// choice menu
+
+.info-menu {
+    background-color: $color-two;
+    margin: 0;
+    padding: 0;
+}
+
+@include info-title;
+
+@include info-choice;
+
+// button for commande 
+
+@include validation-btn;
+
+
+
+
+
+// Responsive media queries
 
 
 @media screen and (max-width: 920px) {
