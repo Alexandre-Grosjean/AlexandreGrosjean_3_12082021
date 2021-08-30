@@ -72,6 +72,7 @@ body {
     background-image: $color-gradient-box;
     box-shadow: 0px 3px 7px grey;
     color : white;
+    cursor: pointer;
 
     &:hover {
         opacity: 0.9;
@@ -125,7 +126,8 @@ body {
     width: 13rem;
     height: auto;
     background-color: $color-two;
-    text-align: center;
+    text-align: center; 
+    cursor: pointer;
 
     &:hover {
         opacity: 0.9;
