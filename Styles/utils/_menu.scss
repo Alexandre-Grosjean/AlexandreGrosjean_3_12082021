@@ -1,0 +1,179 @@
+@import '_colors.scss';
+
+@mixin return {
+
+    .back-icon{
+
+        display: inline-block;
+        position: absolute;
+        width: 30px;
+        margin: 25px 0 0 -65px;
+        font-family: "Font Awesome 5 free";
+
+        .arrow-icon{
+
+            font-size: 25px;
+            color: rgb(112, 112, 112);
+            cursor: pointer;
+        }
+
+}
+
+}
+
+@mixin img-menu {
+
+    .img-page {
+        object-fit: cover;
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+@mixin title-menu {
+
+    .menu {
+    
+        padding-left: 20px;
+        text-align: left;
+    
+        h5 {
+            font-size: 25px;
+            margin: 25px 0 10px 0px;
+        }
+    }
+        
+    .fav-icon {
+    
+                display: inline-block;
+                position: absolute;
+                width: 30px;
+                font-family: "Font Awesome 5 free";
+                cursor: pointer;
+                margin: -40px 0 0 300px;
+        
+                .heart-icon{
+        
+                    font-size: 25px;
+        
+                }
+        
+                .heart-icon:before {
+                    content: '\f004';
+                    display: block;
+                }
+        
+                .heart-icon:hover {
+                    
+                    font-weight: 900;
+                    // background: $color-heart-full;
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                    // transition-duration: 350ms;
+        
+                    animation-name: heart;
+                    animation-duration: 350ms;
+                    animation-timing-function: ease-out;
+                    animation-fill-mode: forwards;
+        
+                }
+        
+                @keyframes heart {
+        
+                    0% {
+                        background: $color-heart-full;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        opacity: 0.2;
+                        font-size: 25px;
+                    }
+        
+                    25% {
+                        background: $color-heart-full;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        opacity: 0.5;
+                    }
+        
+                    50% {
+                        background: $color-heart-full;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        opacity: 0.7;
+                        font-size: 24px;
+                    }
+        
+                    75% {
+                        background: $color-heart-full;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        opacity: 0.9;
+                    }
+        
+                    100% {
+                        background: $color-heart-full;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        opacity: 1;
+                        font-size: 25px;
+                    }
+                }
+    }
+}
+
+@mixin info-title {
+
+    .info-title {
+        font-size: 25px;
+        font-weight: normal;
+        font-style: normal;
+        border: 2px black solid;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+    }
+
+}
+
+@mixin info-choice {
+
+    .info-choice p {
+        font-size: 16px;
+        background-color: $color-body;
+        // border: 0px black solid;
+        border-radius: 15px;
+        box-shadow: $color-choice;
+        margin: 10px;
+        padding: 10px;
+        text-align: left;
+    }
+    
+}
+
+
+
+@mixin validation-btn {
+
+    .cmd_btn {
+        background-color: $color-two;
+        margin: 20px;
+
+        .btn_cmd {
+            border: 0px;
+            border-radius: 20px;
+            padding: 10px 20px 10px 20px;
+            text-align: center;
+            background-image: $color-gradient-box;
+            box-shadow: 0px 3px 7px grey;
+            color : white;
+            cursor: pointer;
+    
+            &:hover {
+                opacity: 0.9;
+                box-shadow: $color-choice-shadow;
+            }
+        }
+    }    
+
+}
