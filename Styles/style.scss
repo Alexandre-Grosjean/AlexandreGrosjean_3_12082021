@@ -1,5 +1,6 @@
 @import 'utils/_colors.scss';
 @import 'utils/_card.scss';
+@import 'utils/_menu.scss';
 
 
 a {
@@ -202,7 +203,7 @@ footer {
     border: none;
     background-color: $color-three;
     display: grid;
-    grid-template-columns: auto 1920px auto;
+    grid-template-columns: auto minmax(300px, 1920px) auto;
     grid-template-rows: auto;
     grid-template-areas: ". footer ."
                         ". footer2 .";
@@ -239,6 +240,20 @@ footer {
         padding: 0 0 5px 0;
     }
 }
+
+// page menu
+
+@include return;
+
+@include img-menu;
+
+@include title-menu;
+
+@include info-title;
+
+@include info-choice;
+
+@include validation-btn;
 
 // Responsive
 
