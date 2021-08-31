@@ -4,11 +4,13 @@
 
     .back-icon{
 
+        display: grid;
         display: inline-block;
         position: absolute;
         width: 30px;
         margin: 25px 0 0 -65px;
         font-family: "Font Awesome 5 free";
+        
 
         .arrow-icon{
 
@@ -25,7 +27,7 @@
 
     .img-page {
         object-fit: cover;
-        width: 100%;
+        width: 500px;
         margin: 0;
     }
 

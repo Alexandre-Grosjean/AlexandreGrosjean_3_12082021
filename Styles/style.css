@@ -376,8 +376,8 @@ footer {
   background-color: #414141;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1920px auto;
-      grid-template-columns: auto 1920px auto;
+  -ms-grid-columns: auto minmax(300px, 1920px) auto;
+      grid-template-columns: auto minmax(300px, 1920px) auto;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: ". footer ." ". footer2 .";
@@ -417,6 +417,150 @@ footer {
 
 .footer-list li {
   padding: 0 0 5px 0;
+}
+
+.back-icon {
+  display: -ms-grid;
+  display: grid;
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  margin: 25px 0 0 -65px;
+  font-family: "Font Awesome 5 free";
+}
+
+.back-icon .arrow-icon {
+  font-size: 25px;
+  color: #707070;
+  cursor: pointer;
+}
+
+.img-page {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 500px;
+  margin: 0;
+}
+
+.menu {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.menu h5 {
+  font-size: 25px;
+  margin: 25px 0 10px 0px;
+}
+
+.fav-icon {
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  font-family: "Font Awesome 5 free";
+  cursor: pointer;
+  margin: -40px 0 0 300px;
+}
+
+.fav-icon .heart-icon {
+  font-size: 25px;
+}
+
+.fav-icon .heart-icon:before {
+  content: '\f004';
+  display: block;
+}
+
+.fav-icon .heart-icon:hover {
+  font-weight: 900;
+  -webkit-animation-name: heart;
+          animation-name: heart;
+  -webkit-animation-duration: 350ms;
+          animation-duration: 350ms;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes heart {
+  0% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.2;
+    font-size: 25px;
+  }
+  25% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+  }
+  50% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.7;
+    font-size: 24px;
+  }
+  75% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.9;
+  }
+  100% {
+    background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    font-size: 25px;
+  }
+}
+
+.info-title {
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  border: 2px black solid;
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.info-choice p {
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0.06px 1px grey;
+          box-shadow: 0px 0.06px 1px grey;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+.cmd_btn {
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+.cmd_btn .btn_cmd {
+  border: 0px;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  -webkit-box-shadow: 0px 3px 7px grey;
+          box-shadow: 0px 3px 7px grey;
+  color: white;
+  cursor: pointer;
+}
+
+.cmd_btn .btn_cmd:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 0.06px 3px 2px gray;
+          box-shadow: 0px 0.06px 3px 2px gray;
 }
 
 @media screen and (max-width: 920px) {
