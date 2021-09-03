@@ -241,6 +241,13 @@ footer {
     }
 }
 
+
+// menu-pages
+
+    .img-page {
+        width: 100%;
+    }
+
 // Responsive
 
 
@@ -258,5 +265,13 @@ footer {
     
     }
 
+    .choice-title {
+        text-align: left;
+    }
 
+    .list-restaurants-title {
+        text-align: left;
+        margin: 0;
+        padding: 20px;
+    }
 }

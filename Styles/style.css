@@ -283,6 +283,10 @@ footer {
   padding: 0 0 5px 0;
 }
 
+.img-page {
+  width: 100%;
+}
+
 @media screen and (max-width: 920px) {
   .choice-top {
     flex-direction: column;
@@ -298,6 +302,16 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 15px;
     padding-bottom: 40px;
+  }
+
+  .choice-title {
+    text-align: left;
+  }
+
+  .list-restaurants-title {
+    text-align: left;
+    margin: 0;
+    padding: 20px;
   }
 }
 
