@@ -244,9 +244,75 @@ footer {
 
 // menu-pages
 
-    .img-page {
-        width: 100%;
+    .header-menu {
+
+        display: grid;
+        grid-template-columns: auto 1fr auto 1fr auto;
+        grid-template-rows: auto;
+        grid-template-areas: ". back-page title-page . .";
+        
+
+        .img-title {
+            grid-area: title-page;
+            margin: auto
+            
+        }
+
+        .back-icon {
+            grid-area: back-page;
+            font-size: 25px;
+            opacity: 0.8;
+            margin: auto;
+            padding-top: 15px;
+        }
     }
+
+    .img-page {
+        min-width: 100%;
+        max-width: 700px;
+    }
+
+        
+    .menu {
+
+        border: 2px black solid;
+        margin: 15px;
+
+        h5 {
+            font-size: 20px;
+        }
+    }
+
+    .info-menu {
+
+        .info-title {
+            border: 2px black solid;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .info-choice p{
+            border: 2px black solid;
+            font-size: 16px;
+        }
+    }
+
+    .btn_cmd {
+        border: 0px;
+        border-radius: 20px;
+        margin: 25px;
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+        background-image: $color-gradient-box;
+        box-shadow: 0px 3px 7px grey;
+        color : white;
+        
+            &:hover {
+                opacity: 0.8;
+                box-shadow: $color-choice-shadow;
+            }
+        }
+
 
 // Responsive
 
