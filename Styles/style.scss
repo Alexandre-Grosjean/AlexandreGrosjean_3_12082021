@@ -244,6 +244,8 @@ footer {
 
 // menu-pages
 
+// header 
+
     .header-menu {
 
         display: grid;
@@ -267,40 +269,103 @@ footer {
         }
     }
 
-    .img-page {
-        width: 100%;
-        max-width: 700px;
-    }
+// main page 
 
         
     .menu {
 
-        border: 2px black solid;
-        margin: 15px;
-
-        h5 {
-            font-size: 20px;
+        .img-page {
+            width: 100%;
+            max-width: 700px;
         }
+
+        .page-title-menu {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            border: 2px black solid;
+            margin: auto;
+            border-radius: 20px 20px 0 0;
+            max-width: 700px;
+
+            h5 {
+            font-size: 20px;
+            }
+
+            .fav-icon {
+
+            display: inline-block;
+            position: absolute;
+            width: 30px;
+            margin: 33px 0 0 250px;
+            font-family: "Font Awesome 5 free";
+    
+            .heart-icon{
+    
+                font-size: 25px;
+    
+            }
+    
+            .heart-icon:before {
+                content: '\f004';
+                display: block;
+            }
+    
+            .heart-icon:hover {
+                
+                font-weight: 900;
+                background: $color-heart-full;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: 0.5s;
+            }
+            }
+
+        }
+        
+
     }
 
     .info-menu {
 
         .info-title {
-            border: 2px black solid;
+            border-bottom: 3px rgb(166, 235, 208) solid;
+            margin: 0;
+            padding: 0;
 
             h6 {
 
                 font-size: 18px;
                 font-weight: 500;
-
+                margin: 0;
+                padding: 0;
+                text-align: left;
             }
         }
 
-        .info-choice p{
-            border: 2px black solid;
-            font-size: 16px;
+        .travaux {
+
+            border-radius: 20px;
+            box-shadow: 0 0 4px 1px grey;
+            margin: 20px;
+            width: 330px;
+            text-align: left;
+            background-color: white;
+
+            p {
+                margin: 5px 10px;
+                padding: 2px;
+            }
         }
+
     }
+
+
+
+// button 
+
 
     .btn_cmd {
         border: 0px;
