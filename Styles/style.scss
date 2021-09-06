@@ -274,24 +274,32 @@ footer {
         
     .menu {
 
+        display: flex;
+        flex-direction: column;
+
         .img-page {
             width: 100%;
-            max-width: 700px;
+            height: 300px;
+            object-fit: cover;
+            z-index: 10;
         }
 
         .page-title-menu {
 
+            z-index: 20;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            align-content: center;
-            border: 2px black solid;
-            margin: auto;
+            margin-top: -50px;
+            padding: 0 70px 0 20px;
             border-radius: 20px 20px 0 0;
-            max-width: 700px;
+            max-width: 100%;
+            background-color: white;
+
 
             h5 {
             font-size: 20px;
+            text-align: left;
             }
 
             .fav-icon {
@@ -301,6 +309,8 @@ footer {
             width: 30px;
             margin: 33px 0 0 250px;
             font-family: "Font Awesome 5 free";
+
+            }
     
             .heart-icon{
     
@@ -321,18 +331,17 @@ footer {
                 -webkit-text-fill-color: transparent;
                 transition: 0.5s;
             }
-            }
 
         }
-        
 
     }
 
     .info-menu {
 
         .info-title {
-            border-bottom: 3px rgb(166, 235, 208) solid;
-            margin: 0;
+
+            border-bottom: 4px rgb(166, 235, 208) solid;
+            margin: 20px;
             padding: 0;
 
             h6 {
@@ -343,6 +352,7 @@ footer {
                 padding: 0;
                 text-align: left;
             }
+
         }
 
         .travaux {
@@ -350,13 +360,21 @@ footer {
             border-radius: 20px;
             box-shadow: 0 0 4px 1px grey;
             margin: 20px;
-            width: 330px;
+            width: 90%;
+            max-width: 400px;
             text-align: left;
             background-color: white;
+            &:hover {
+                opacity: 0.8;
+            }
 
             p {
                 margin: 5px 10px;
                 padding: 2px;
+            }
+
+            .menu-price {
+                font-weight: 500;
             }
         }
 

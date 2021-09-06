@@ -301,22 +301,30 @@ footer {
   padding-top: 15px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+}
 .menu .img-page {
   width: 100%;
-  max-width: 700px;
+  height: 300px;
+  object-fit: cover;
+  z-index: 10;
 }
 .menu .page-title-menu {
+  z-index: 20;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
-  border: 2px black solid;
-  margin: auto;
+  margin-top: -50px;
+  padding: 0 70px 0 20px;
   border-radius: 20px 20px 0 0;
-  max-width: 700px;
+  max-width: 100%;
+  background-color: white;
 }
 .menu .page-title-menu h5 {
   font-size: 20px;
+  text-align: left;
 }
 .menu .page-title-menu .fav-icon {
   display: inline-block;
@@ -325,14 +333,14 @@ footer {
   margin: 33px 0 0 250px;
   font-family: "Font Awesome 5 free";
 }
-.menu .page-title-menu .fav-icon .heart-icon {
+.menu .page-title-menu .heart-icon {
   font-size: 25px;
 }
-.menu .page-title-menu .fav-icon .heart-icon:before {
+.menu .page-title-menu .heart-icon:before {
   content: "\f004";
   display: block;
 }
-.menu .page-title-menu .fav-icon .heart-icon:hover {
+.menu .page-title-menu .heart-icon:hover {
   font-weight: 900;
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
@@ -341,8 +349,8 @@ footer {
 }
 
 .info-menu .info-title {
-  border-bottom: 3px #a6ebd0 solid;
-  margin: 0;
+  border-bottom: 4px #a6ebd0 solid;
+  margin: 20px;
   padding: 0;
 }
 .info-menu .info-title h6 {
@@ -356,13 +364,20 @@ footer {
   border-radius: 20px;
   box-shadow: 0 0 4px 1px grey;
   margin: 20px;
-  width: 330px;
+  width: 90%;
+  max-width: 400px;
   text-align: left;
   background-color: white;
+}
+.info-menu .travaux:hover {
+  opacity: 0.8;
 }
 .info-menu .travaux p {
   margin: 5px 10px;
   padding: 2px;
+}
+.info-menu .travaux .menu-price {
+  font-weight: 500;
 }
 
 .btn_cmd {
