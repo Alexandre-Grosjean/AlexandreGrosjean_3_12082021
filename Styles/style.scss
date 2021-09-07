@@ -249,9 +249,9 @@ footer {
     .header-menu {
 
         display: grid;
-        grid-template-columns: auto 1fr auto 1fr auto;
+        grid-template-columns: 60px auto auto auto 60px;
         grid-template-rows: auto;
-        grid-template-areas: ". back-page title-page . .";
+        grid-template-areas: "back-page . title-page . .";
         
 
         .img-title {
@@ -265,7 +265,12 @@ footer {
             font-size: 25px;
             opacity: 0.8;
             margin: auto;
-            padding-top: 15px;
+            padding-top: 13px;
+            
+            .fa-arrow-left {
+                color: rgb(66, 66, 66);
+            }
+
         }
     }
 
@@ -355,7 +360,11 @@ footer {
 
         }
 
-        .travaux {
+        .menu-plat {
+            display: grid;
+            grid-template-columns: 60% 20% auto;
+            grid-template-rows: auto;
+            grid-template-areas: "title price check";
 
             border-radius: 20px;
             box-shadow: 0 0 4px 1px grey;
@@ -368,13 +377,43 @@ footer {
                 opacity: 0.8;
             }
 
+            .menu-name {
+
+              grid-area: title;  
+
+            }
+
             p {
                 margin: 5px 10px;
                 padding: 2px;
             }
 
             .menu-price {
+                grid-area: price;
                 font-weight: 500;
+            }
+
+            .box-validator {
+                grid-area: check;
+                background-color: green;
+                border-radius: 0 20px 20px 0;
+            }
+
+            .choice-validator{ 
+
+                width: max-content;
+                font-family: "Font Awesome 5 free";
+                
+                &::before {
+
+                    content: '\f058';
+                    display: block;
+                    font-size: 40px;
+
+                }
+
+                
+
             }
         }
 
