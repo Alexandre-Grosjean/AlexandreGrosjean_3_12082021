@@ -396,11 +396,11 @@ footer {
             .box-validator {
                 grid-area: check;
                 background-color: green;
+                border-radius: 0 20px 20px 0;
             }
 
             .choice-validator{ 
 
-                display: block;
                 width: max-content;
                 font-family: "Font Awesome 5 free";
                 
@@ -411,6 +411,8 @@ footer {
                     font-size: 40px;
 
                 }
+
+                
 
             }
         }
