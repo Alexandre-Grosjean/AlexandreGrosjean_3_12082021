@@ -362,10 +362,9 @@ footer {
 
         .menu-plat {
             display: grid;
-            grid-template-columns: 70% 10% 20%;
-            grid-template-rows: auto auto;
-            grid-template-areas: "title price check"
-                                "title1 price1 check1";
+            grid-template-columns: 60% 20% auto;
+            grid-template-rows: auto;
+            grid-template-areas: "title price check";
 
             border-radius: 20px;
             box-shadow: 0 0 4px 1px grey;
