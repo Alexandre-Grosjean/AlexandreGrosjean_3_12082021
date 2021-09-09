@@ -243,7 +243,7 @@ main {
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
 footer {
@@ -348,15 +348,19 @@ footer {
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
+.info-menu .info-choice {
+  display: flex;
+  justify-content: space-around;
+}
 .info-menu .info-title {
-  border-bottom: 4px #a6ebd0 solid;
   margin: 20px;
   padding: 0;
 }
 .info-menu .info-title h6 {
+  text-decoration: underline #a6ebd0 5px;
   font-size: 18px;
   font-weight: 500;
   margin: 0;
@@ -365,11 +369,11 @@ footer {
 }
 .info-menu .menu-plat {
   display: grid;
-  grid-template-columns: 60% 20% auto;
-  grid-template-rows: auto;
+  grid-template-columns: 4fr 1fr auto;
+  grid-template-rows: 80px;
   grid-template-areas: "title price check";
   border-radius: 20px;
-  box-shadow: 0 0 4px 1px grey;
+  box-shadow: 0 0 10px 0.3px grey;
   margin: 20px;
   width: 90%;
   max-width: 400px;
@@ -389,20 +393,18 @@ footer {
 .info-menu .menu-plat .menu-price {
   grid-area: price;
   font-weight: 500;
+  padding-top: 45px;
 }
 .info-menu .menu-plat .box-validator {
   grid-area: check;
-  background-color: green;
+  background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
+  width: 80px;
 }
 .info-menu .menu-plat .choice-validator {
-  width: max-content;
-  font-family: "Font Awesome 5 free";
-}
-.info-menu .menu-plat .choice-validator::before {
-  content: "\f058";
-  display: block;
-  font-size: 40px;
+  width: 30px;
+  margin: auto;
+  padding: 24px 0 0 0;
 }
 
 .btn_cmd {
@@ -420,6 +422,31 @@ footer {
   box-shadow: 0px 0.06px 3px 2px gray;
 }
 
+@media screen and (min-width: 1921px) {
+  .localisation {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .top-main-page {
+    border-radius: 0 0 15px 15px;
+  }
+
+  .list-restaurants {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .img-page {
+    border-radius: 15px 15px 0 0;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .info-menu .info-choice {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 920px) {
   .choice-top {
     flex-direction: column;
