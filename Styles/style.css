@@ -420,6 +420,19 @@ footer {
   box-shadow: 0px 0.06px 3px 2px gray;
 }
 
+@media screen and (min-width: 1921px) {
+  .localisation {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .top-main-page {
+    border-radius: 0 0 15px 15px;
+  }
+
+  .list-restaurants {
+    border-radius: 15px 15px 0 0;
+  }
+}
 @media screen and (max-width: 920px) {
   .choice-top {
     flex-direction: column;
