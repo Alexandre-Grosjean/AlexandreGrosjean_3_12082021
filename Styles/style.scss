@@ -1,486 +1,460 @@
-@import 'utils/_colors.scss';
-@import 'utils/_card.scss';
-
+@import "utils/_colors.scss";
+@import "utils/_card.scss";
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: black;
+
+  &:active {
     color: black;
+  }
 
-    &:active {
-        color: black;
-    }
-
-    &:visited {
-        color: black;
-    }
+  &:visited {
+    color: black;
+  }
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: $color-body;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    
+  font-family: "Roboto", sans-serif;
+  background-color: $color-body;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
 }
 
 // header
 
 header {
-    max-width: 1920px;
-    margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .img-title {
-    padding-top: 20px;
-    padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 .localisation {
-    box-shadow: inset 0  7px 4px -6px rgb(196, 196, 196);
-    background-color: $color-one;
-    padding: 10px;
-    font-size: 0.9em;
+  box-shadow: inset 0 7px 4px -6px rgb(196, 196, 196);
+  background-color: $color-one;
+  padding: 10px;
+  font-size: 0.9em;
 }
 
 // top main page
 
 main {
-    max-width: 1920px;
-    margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .top-main-page {
-    padding: 2rem;
-    background-color: $color-two;
+  padding: 2rem;
+  background-color: $color-two;
 
-    h2 {
-        margin: 0;
-    }
-
+  h2 {
+    margin: 0;
+  }
 }
 
 .btn_explore {
-    border: 0px;
-    border-radius: 20px;
-    padding: 10px 20px 10px 20px;
-    text-align: center;
-    background-image: $color-gradient-box;
-    box-shadow: 0px 3px 7px grey;
-    color : white;
+  border: 0px;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  background-image: $color-gradient-box;
+  box-shadow: 0px 3px 7px grey;
+  color: white;
 
-    &:hover {
-        opacity: 0.8;
-        box-shadow: $color-choice-shadow;
-    }
+  &:hover {
+    opacity: 0.8;
+    box-shadow: $color-choice-shadow;
+  }
 }
 
 .choice-main-page {
-    border: none;
+  border: none;
 }
 
 .choice-title {
-    margin: 20px 0px 0px 20px;
-    text-align: center;
+  margin: 20px 0px 0px 20px;
+  text-align: center;
 }
 
 .choice-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .choice-bubble {
-    margin: -4px 25px 0 -53px;
-    padding :  0 0 0 0;
-    width: 23px;
-    height: 23px;
-    font-size: 13px;
-    color: $color-two;
-    background: $color-bubble-choice;
-    border-radius: 50%;
-    position: absolute;
+  margin: -4px 25px 0 -53px;
+  padding: 0 0 0 0;
+  width: 23px;
+  height: 23px;
+  font-size: 13px;
+  color: $color-two;
+  background: $color-bubble-choice;
+  border-radius: 50%;
+  position: absolute;
 
-    p {
-        margin: 4px 0 0 0;
-    }
-
+  p {
+    margin: 4px 0 0 0;
+  }
 }
 
 .choice {
-    display: flex;
-    justify-content: left;
-    border: none;
-    box-shadow: $color-choice;
-    border-radius: 20px;
-    margin: 1rem;
-    padding: 20px 40px 17px 40px;
-    width: 13rem;
-    height: auto;
-    background-color: $color-two;
-    text-align: center;
+  display: flex;
+  justify-content: left;
+  border: none;
+  box-shadow: $color-choice;
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 20px 40px 17px 40px;
+  width: 13rem;
+  height: auto;
+  background-color: $color-two;
+  text-align: center;
 
-    &:hover {
-        opacity: 0.8;
-        box-shadow: $color-choice-shadow;
-        color: $color-bubble-choice;
-        background-color: $color-hover-bubble;
-    }
-
+  &:hover {
+    opacity: 0.8;
+    box-shadow: $color-choice-shadow;
+    color: $color-bubble-choice;
+    background-color: $color-hover-bubble;
+  }
 }
 
 .choice-text {
-    padding-left: 10px;
-    padding-right: 0px;
+  padding-left: 10px;
+  padding-right: 0px;
 }
 
 // card
 
 .list-restaurants {
-    background-color: $color-two;
+  background-color: $color-two;
 }
 
 .list-restaurants-title {
-    margin: 0;
-    padding: 50px 0 40px 20px;
-    text-align: center;
+  margin: 0;
+  padding: 50px 0 40px 20px;
+  text-align: center;
 }
 
 .all-card-restaurants {
-
-    @include restaurant-grid
-
+  @include restaurant-grid;
 }
 
 .link-card-restaurants {
-    @include cards
+  @include cards;
 }
 
 .img-card {
-    @include img-cards
+  @include img-cards;
 }
 
 #img-card-1 {
-    object-position: 50% -50px;
+  object-position: 50% -50px;
 }
 
 #img-card-2 {
-    object-position: 50% -145px;
-    height: 160px;
-    padding-bottom: 7px;
+  object-position: 50% -145px;
+  height: 160px;
+  padding-bottom: 7px;
 }
 
 #img-card-3 {
-    object-position: 50% -50px;
+  object-position: 50% -50px;
 }
 
 #img-card-4 {
-    object-position: 50% -50px;
-    height: 160px;
-    padding-bottom: 7px;
+  object-position: 50% -50px;
+  height: 160px;
+  padding-bottom: 7px;
 }
 
 .new {
-
-    @include nouveau;
-
+  @include nouveau;
 }
 
 .info-card {
-    @include text-cards
+  @include text-cards;
 }
 
 // footer
 
 footer {
-    border: none;
-    background-color: $color-three;
-    display: grid;
-    grid-template-columns: auto minmax(auto, 1920px) auto;
-    grid-template-rows: auto;
-    grid-template-areas: ". footer ."
-                        ". footer2 .";
+  border: none;
+  background-color: $color-three;
+  display: grid;
+  grid-template-columns: auto minmax(auto, 1920px) auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". footer ."
+    ". footer2 .";
 }
 
 .img-footer {
-    grid-area: footer;
-    width: 100px;
-    margin: 20px 0 20px 20px;
+  grid-area: footer;
+  width: 100px;
+  margin: 20px 0 20px 20px;
 }
 
 .footer-list {
-    grid-area: footer2;
-    margin: 0 0 20px 20px;
-    padding: 0;
-    text-align: left;
+  grid-area: footer2;
+  margin: 0 0 20px 20px;
+  padding: 0;
+  text-align: left;
+  color: white;
+
+  .fa-utensils {
+    padding: 0 13px 0 0;
+    font-size: 13px;
+  }
+
+  .fa-hands-helping {
+    padding: 0 10px 0 0;
+    font-size: 11px;
+  }
+
+  a {
     color: white;
+  }
 
-    .fa-utensils {
-        padding: 0 13px 0 0;
-        font-size: 13px;
-    }
-
-    .fa-hands-helping {
-        padding: 0 10px 0 0;
-        font-size: 11px;
-    }
-
-    a {
-        color: white;
-    }
-
-    li {
-        padding: 0 0 5px 0;
-    }
+  li {
+    padding: 0 0 5px 0;
+  }
 }
-
 
 // menu-pages
 
-// header 
+// header
 
-    .header-menu {
+.header-menu {
+  display: grid;
+  grid-template-columns: 60px auto auto auto 60px;
+  grid-template-rows: auto;
+  grid-template-areas: "back-page . title-page . .";
 
-        display: grid;
-        grid-template-columns: 60px auto auto auto 60px;
-        grid-template-rows: auto;
-        grid-template-areas: "back-page . title-page . .";
-        
+  .img-title {
+    grid-area: title-page;
+    margin: auto;
+  }
 
-        .img-title {
-            grid-area: title-page;
-            margin: auto
-            
-        }
+  .back-icon {
+    grid-area: back-page;
+    font-size: 25px;
+    opacity: 0.8;
+    margin: auto;
+    padding-top: 13px;
 
-        .back-icon {
-            grid-area: back-page;
-            font-size: 25px;
-            opacity: 0.8;
-            margin: auto;
-            padding-top: 13px;
-            
-            .fa-arrow-left {
-                color: rgb(66, 66, 66);
-            }
+    .fa-arrow-left {
+      color: rgb(66, 66, 66);
+    }
+  }
+}
 
-        }
+// main page
+
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  .img-page {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    z-index: 10;
+  }
+
+  .page-title-menu {
+    z-index: 20;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -50px;
+    padding: 0 70px 0 20px;
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+    background-color: white;
+
+    h5 {
+      font-size: 20px;
+      text-align: left;
     }
 
-// main page 
-
-        
-    .menu {
-
-        display: flex;
-        flex-direction: column;
-
-        .img-page {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            z-index: 10;
-        }
-
-        .page-title-menu {
-
-            z-index: 20;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-top: -50px;
-            padding: 0 70px 0 20px;
-            border-radius: 20px 20px 0 0;
-            max-width: 100%;
-            background-color: white;
-
-
-            h5 {
-            font-size: 20px;
-            text-align: left;
-            }
-
-            .fav-icon {
-
-            display: inline-block;
-            position: absolute;
-            width: 30px;
-            margin: 33px 0 0 250px;
-            font-family: "Font Awesome 5 free";
-
-            }
-    
-            .heart-icon{
-    
-                font-size: 25px;
-    
-            }
-    
-            .heart-icon:before {
-                content: '\f004';
-                display: block;
-            }
-    
-            .heart-icon:hover {
-                
-                font-weight: 900;
-                background: $color-heart-full;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                transition: 0.5s;
-            }
-
-        }
-
+    .fav-icon {
+      display: inline-block;
+      position: absolute;
+      width: 30px;
+      margin: 33px 0 0 250px;
+      font-family: "Font Awesome 5 free";
     }
 
-    .info-menu {
-
-        .info-title {
-
-            border-bottom: 4px rgb(166, 235, 208) solid;
-            margin: 20px;
-            padding: 0;
-
-            h6 {
-
-                font-size: 18px;
-                font-weight: 500;
-                margin: 0;
-                padding: 0;
-                text-align: left;
-            }
-
-        }
-
-        .menu-plat {
-            display: grid;
-            grid-template-columns: 60% 20% auto;
-            grid-template-rows: auto;
-            grid-template-areas: "title price check";
-
-            border-radius: 20px;
-            box-shadow: 0 0 4px 1px grey;
-            margin: 20px;
-            width: 90%;
-            max-width: 400px;
-            text-align: left;
-            background-color: white;
-            &:hover {
-                opacity: 0.8;
-            }
-
-            .menu-name {
-
-              grid-area: title;  
-
-            }
-
-            p {
-                margin: 5px 10px;
-                padding: 2px;
-            }
-
-            .menu-price {
-                grid-area: price;
-                font-weight: 500;
-            }
-
-            .box-validator {
-                grid-area: check;
-                background-color: green;
-                border-radius: 0 20px 20px 0;
-            }
-
-            .choice-validator{ 
-
-                width: max-content;
-                font-family: "Font Awesome 5 free";
-                
-                &::before {
-
-                    content: '\f058';
-                    display: block;
-                    font-size: 40px;
-
-                }
-
-                
-
-            }
-        }
-
+    .heart-icon {
+      font-size: 25px;
     }
 
+    .heart-icon:before {
+      content: "\f004";
+      display: block;
+    }
 
+    .heart-icon:hover {
+      font-weight: 900;
+      background: $color-heart-full;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 1.5s;
+    }
+  }
+}
 
-// button 
+// menu-choice
 
+.info-menu {
+  .info-choice {
+    display: flex;
+    justify-content: space-around;
+  }
 
-    .btn_cmd {
-        border: 0px;
-        border-radius: 20px;
-        margin: 25px;
-        padding: 10px 20px 10px 20px;
-        text-align: center;
-        background-image: $color-gradient-box;
-        box-shadow: 0px 3px 7px grey;
-        color : white;
-        
-            &:hover {
-                opacity: 0.8;
-                box-shadow: $color-choice-shadow;
-            }
-        }
+  .info-title {
+    // border-bottom: 4px rgb(166, 235, 208) solid;
+    margin: 20px;
+    padding: 0;
 
+    h6 {
+    text-decoration: underline rgb(166, 235, 208) 5px;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+  .menu-plat {
+    display: grid;
+    grid-template-columns: 4fr 1fr auto;
+    grid-template-rows: 80px;
+    grid-template-areas: "title price check";
+
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0.3px grey;
+    margin: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: left;
+    background-color: white;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    .menu-name {
+      grid-area: title;
+    }
+
+    p {
+      margin: 5px 10px;
+      padding: 2px;
+    }
+
+    .menu-price {
+      grid-area: price;
+      font-weight: 500;
+      padding-top: 45px;
+    }
+
+    .box-validator {
+      grid-area: check;
+      background-color: $color-check-box;
+      border-radius: 0 20px 20px 0;
+      width: 80px;
+    }
+
+    .choice-validator {
+        width: 30px;
+        margin: auto;
+        padding: 24px 0 0 0;
+    }
+  }
+}
+
+// button
+
+.btn_cmd {
+  border: 0px;
+  border-radius: 20px;
+  margin: 25px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  background-image: $color-gradient-box;
+  box-shadow: 0px 3px 7px grey;
+  color: white;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: $color-choice-shadow;
+  }
+}
 
 // Responsive
 
 @media screen and (min-width: 1921px) {
+  .localisation {
+    border-radius: 15px 15px 0 0;
+  }
 
-    .localisation {
-        border-radius: 15px 15px 0 0;
+  .top-main-page {
+    border-radius: 0 0 15px 15px;
+  }
+
+  .list-restaurants {
+    border-radius: 15px 15px 0 0;
+  }
+
+  // menu-page
+
+  .img-page {
+    border-radius: 15px 15px 0 0;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .info-menu{
+    .info-choice {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
     }
-
-    .top-main-page {
-        border-radius: 0 0 15px 15px;
-    }
-
-    .list-restaurants {
-        border-radius: 15px 15px 0 0;
-    }
-
+  }
 }
 
-
 @media screen and (max-width: 920px) {
+  .choice-top {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
 
-    .choice-top {
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
+  .all-card-restaurants {
+    @include restaurant-grid-phone;
+  }
 
-    .all-card-restaurants {
+  .choice-title {
+    text-align: left;
+  }
 
-        @include restaurant-grid-phone
-    
-    }
-
-    .choice-title {
-        text-align: left;
-    }
-
-    .list-restaurants-title {
-        text-align: left;
-        margin: 0;
-        padding: 20px;
-    }
+  .list-restaurants-title {
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+  }
 }

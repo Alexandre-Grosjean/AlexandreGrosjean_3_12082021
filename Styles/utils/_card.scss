@@ -1,124 +1,113 @@
-@import '_colors.scss';
+@import "_colors.scss";
 
 @mixin restaurant-grid {
-
-    display: grid;
-    justify-items: center;
-    align-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 15px;
-    padding-bottom: 40px;
-    margin: 0 8%;
-
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 15px;
+  padding-bottom: 40px;
+  margin: 0 8%;
 }
 
 @mixin restaurant-grid-phone {
-
-    display: grid;
-    justify-items: center;
-    align-content: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-row-gap: 15px;
-    padding-bottom: 40px;
-
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 15px;
+  padding-bottom: 40px;
 }
 
 @mixin cards {
-    border-radius: 15px;
-    box-shadow: 0 0 6px 0px grey;
-    width: 320px;
-    height: 230px;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 0px grey;
+  width: 320px;
+  height: 230px;
 
-    &:hover {
-        box-shadow: $color-choice-shadow;
-        opacity: 0.8;
-    }
+  &:hover {
+    box-shadow: $color-choice-shadow;
+    opacity: 0.8;
+  }
 }
 
 @mixin img-cards {
-    border-radius: 12px 12px 0 0;
-    width: 320px;
-    height: 170px;
-    padding: 0;
-    margin: 0;
-    object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  width: 320px;
+  height: 170px;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
 }
 
 @mixin nouveau {
-    border: 0;
-    border-radius: 2px;
-    box-shadow: 0 0 1px 1px grey;
-    background-color: #99e2d0;
-    color: #1b6150;
-    font-size: 13px;
-    font-weight: normal;
-    position: absolute;
-    padding: 5px 10px 5px 10px ;
-    margin-left: 230px;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 1px 1px grey;
+  background-color: #99e2d0;
+  color: #1b6150;
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  padding: 5px 10px 5px 10px;
+  margin-left: 230px;
 }
 
 @mixin text-cards {
-    display: grid;
-    grid-template-columns: 230px 80px;
-    grid-template-rows: 25px 25px;
-    width: 310px;
-    height: 70px;
-    padding: 0 0 0 5px;
-    margin: 0;
-    text-align: left;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 230px 80px;
+  grid-template-rows: 25px 25px;
+  width: 310px;
+  height: 70px;
+  padding: 0 0 0 5px;
+  margin: 0;
+  text-align: left;
+  grid-template-areas:
     "ti he1"
     "to he1";
 
-    .card-title {
-        grid-area: ti;
-        margin: 0;
-        padding: 5px 0 0 10px;
-        color: $color-initial;
-        font-size: 16px;
-        font-weight: bold;
+  .card-title {
+    grid-area: ti;
+    margin: 0;
+    padding: 5px 0 0 10px;
+    color: $color-initial;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .card-town {
+    grid-area: to;
+    margin: 0;
+    padding: 2px 0 0 10px;
+    color: $color-initial;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .fav-icon {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    margin: 10px 0 -10px 25px;
+    font-family: "Font Awesome 5 free";
+
+    .heart-icon {
+      font-size: 25px;
     }
 
-    .card-town {
-        grid-area: to;
-        margin: 0;
-        padding: 2px 0 0 10px;
-        color: $color-initial;
-        font-size: 14px;
-        font-weight: normal;
+    .heart-icon:before {
+      content: "\f004";
+      display: block;
     }
 
-    .fav-icon {
-
-        display: inline-block;
-        position: relative;
-        width: 30px;
-        margin: 10px 0 -10px 25px;
-        font-family: "Font Awesome 5 free";
-
-        .heart-icon{
-
-            font-size: 25px;
-
-        }
-
-        .heart-icon:before {
-            content: '\f004';
-            display: block;
-        }
-
-        .heart-icon:hover {
-            
-            font-weight: 900;
-            background: $color-heart-full;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: 0.5s;
-        }
+    .heart-icon:hover {
+      font-weight: 900;
+      background: $color-heart-full;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 1.5s;
     }
-
-    
-
+  }
 }
