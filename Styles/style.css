@@ -385,6 +385,15 @@ footer {
 }
 .info-menu .menu-plat .menu-name {
   grid-area: title;
+  overflow: hidden;
+  width: 355px;
+  height: 70px;
+  white-space: nowrap;
+}
+.info-menu .menu-plat .menu-name:hover {
+  width: 200px;
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .info-menu .menu-plat p {
   margin: 5px 10px;
