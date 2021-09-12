@@ -379,19 +379,22 @@ footer {
   background-color: white;
   margin: 20px;
   width: 400px;
-  max-width: 400px;
+  max-width: 100%;
   height: 70px;
   text-align: left;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .menu-name-price {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  min-width: 400px;
 }
 .menu-name-price:hover {
-  width: 80%;
+  min-width: 320px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
 }
 
 .menu-name {
@@ -413,7 +416,6 @@ p {
 }
 
 .box-validator {
-  width: 80px;
   min-width: 80px;
   height: 70px;
   background-color: #99E2D0;
