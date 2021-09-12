@@ -242,6 +242,7 @@ main {
   font-weight: 900;
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 1.5s;
 }
@@ -352,15 +353,16 @@ footer {
   transition: 1.5s;
 }
 
-.info-menu .info-choice {
+.info-choice {
   display: flex;
   justify-content: space-around;
 }
-.info-menu .info-title {
+
+.info-title {
   margin: 20px;
   padding: 0;
 }
-.info-menu .info-title h6 {
+.info-title h6 {
   text-decoration: underline #a6ebd0 5px;
   font-size: 18px;
   font-weight: 500;
@@ -368,48 +370,54 @@ footer {
   padding: 0;
   text-align: left;
 }
-.info-menu .menu-plat {
-  display: flex;
-  justify-content: space-between;
+
+.menu-plat {
   border-radius: 20px;
   box-shadow: 0 0 10px 0.3px grey;
-  margin: 20px;
-  width: 100%;
-  max-width: 400px;
-  text-align: left;
   background-color: white;
+  margin: 20px;
+  width: 400px;
+  height: 70px;
+  text-align: left;
+  cursor: pointer;
 }
-.info-menu .menu-plat:hover {
-  opacity: 0.8;
+
+.menu-name-price {
+  display: flex;
+  justify-content: space-between;
 }
-.info-menu .menu-plat .menu-name {
+
+.menu-name {
+  text-overflow: ellipsis;
   overflow: hidden;
-  width: auto;
   height: 70px;
   white-space: nowrap;
 }
-.info-menu .menu-plat p {
+
+p {
   margin: 5px 10px;
   padding: 2px;
 }
-.info-menu .menu-plat .menu-price {
+
+.menu-price {
   font-weight: 500;
-  padding-top: 45px;
+  padding-top: 32px;
   text-align: center;
 }
-.info-menu .menu-plat .box-validator {
-  display: none;
+
+.box-validator {
   position: absolute;
-  height: 77px;
+  height: 70px;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   width: 80px;
-  margin-left: 320px;
+  margin: -70px 0 0 320px;
 }
-.info-menu .menu-plat .choice-validator {
+
+.choice-validator {
   width: 30px;
   margin: auto;
-  padding: 24px 0 0 0;
+  padding-top: 20px;
 }
 
 .btn_cmd {

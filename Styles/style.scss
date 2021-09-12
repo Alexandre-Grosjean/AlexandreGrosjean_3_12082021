@@ -320,7 +320,6 @@ footer {
 
 // menu-choice
 
-.info-menu {
   .info-choice {
     display: flex;
     justify-content: space-around;
@@ -331,7 +330,7 @@ footer {
     padding: 0;
 
     h6 {
-    text-decoration: underline rgb(166, 235, 208) 5px;
+      text-decoration: underline rgb(166, 235, 208) 5px;
       font-size: 18px;
       font-weight: 500;
       margin: 0;
@@ -341,57 +340,54 @@ footer {
   }
 
   .menu-plat {
-    display: flex;
-    justify-content: space-between;
-
     border-radius: 20px;
     box-shadow: 0 0 10px 0.3px grey;
-    margin: 20px;
-    width: 100%;
-    max-width: 400px;
-    text-align: left;
     background-color: white;
-    &:hover {
-      opacity: 0.8;
-    }
-    
-
-    .menu-name {
-      overflow: hidden;
-      width: auto;
-      height: 70px;
-      white-space: nowrap;
-    }
-
-
-    p {
-      margin: 5px 10px;
-      padding: 2px;
-    }
-
-    .menu-price {
-      font-weight: 500;
-      padding-top: 45px;
-      text-align: center;
-    }
-
-    .box-validator {
-      display: none;
-      position: absolute;
-      height: 77px;
-      background-color: $color-check-box;
-      border-radius: 0 20px 20px 0;
-      width: 80px;
-      margin-left: 320px;
-    }
-
-    .choice-validator {
-        width: 30px;
-        margin: auto;
-        padding: 24px 0 0 0;
-    }
+    margin: 20px;
+    width: 400px;
+    height: 70px;
+    text-align: left;
+    cursor: pointer;
   }
-}
+
+  .menu-name-price {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .menu-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 70px;
+    white-space: nowrap;
+  }
+
+  p {
+    margin: 5px 10px;
+    padding: 2px;
+  }
+
+  .menu-price {
+    font-weight: 500;
+    padding-top: 32px;
+    text-align: center;
+  }
+
+  .box-validator {
+    position: absolute;
+    height: 70px;
+    background-color: $color-check-box;
+    border-radius: 0 20px 20px 0;
+    width: 80px;
+    margin: -70px 0 0 320px;
+  }
+
+  .choice-validator {
+    width: 30px;
+    margin: auto;
+    padding-top: 20px;
+  }
 
 // button
 
@@ -463,4 +459,8 @@ footer {
     margin: 0;
     padding: 20px;
   }
+
+  // .menu-name-price {
+  //   flex-direction: column;
+  // }
 }
