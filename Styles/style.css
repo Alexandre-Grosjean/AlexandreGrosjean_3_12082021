@@ -347,6 +347,7 @@ footer {
   font-weight: 900;
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 1.5s;
 }
@@ -368,14 +369,12 @@ footer {
   text-align: left;
 }
 .info-menu .menu-plat {
-  display: grid;
-  grid-template-columns: 4fr 1fr auto;
-  grid-template-rows: 80px;
-  grid-template-areas: "title price check";
+  display: flex;
+  justify-content: space-between;
   border-radius: 20px;
   box-shadow: 0 0 10px 0.3px grey;
   margin: 20px;
-  width: 90%;
+  width: 100%;
   max-width: 400px;
   text-align: left;
   background-color: white;
@@ -384,31 +383,28 @@ footer {
   opacity: 0.8;
 }
 .info-menu .menu-plat .menu-name {
-  grid-area: title;
   overflow: hidden;
-  width: 355px;
+  width: auto;
   height: 70px;
   white-space: nowrap;
-}
-.info-menu .menu-plat .menu-name:hover {
-  width: 200px;
-  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .info-menu .menu-plat p {
   margin: 5px 10px;
   padding: 2px;
 }
 .info-menu .menu-plat .menu-price {
-  grid-area: price;
   font-weight: 500;
   padding-top: 45px;
+  text-align: center;
 }
 .info-menu .menu-plat .box-validator {
-  grid-area: check;
+  display: none;
+  position: absolute;
+  height: 77px;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
   width: 80px;
+  margin-left: 320px;
 }
 .info-menu .menu-plat .choice-validator {
   width: 30px;

@@ -311,6 +311,7 @@ footer {
       font-weight: 900;
       background: $color-heart-full;
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: 1.5s;
     }
@@ -326,7 +327,6 @@ footer {
   }
 
   .info-title {
-    // border-bottom: 4px rgb(166, 235, 208) solid;
     margin: 20px;
     padding: 0;
 
@@ -341,15 +341,13 @@ footer {
   }
 
   .menu-plat {
-    display: grid;
-    grid-template-columns: 4fr 1fr auto;
-    grid-template-rows: 80px;
-    grid-template-areas: "title price check";
+    display: flex;
+    justify-content: space-between;
 
     border-radius: 20px;
     box-shadow: 0 0 10px 0.3px grey;
     margin: 20px;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     text-align: left;
     background-color: white;
@@ -359,16 +357,10 @@ footer {
     
 
     .menu-name {
-      grid-area: title;
       overflow: hidden;
-      width: 355px;
+      width: auto;
       height: 70px;
       white-space: nowrap;
-      &:hover {
-        width: 200px;
-        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-      }
     }
 
 
@@ -378,16 +370,19 @@ footer {
     }
 
     .menu-price {
-      grid-area: price;
       font-weight: 500;
       padding-top: 45px;
+      text-align: center;
     }
 
     .box-validator {
-      grid-area: check;
+      display: none;
+      position: absolute;
+      height: 77px;
       background-color: $color-check-box;
       border-radius: 0 20px 20px 0;
       width: 80px;
+      margin-left: 320px;
     }
 
     .choice-validator {
