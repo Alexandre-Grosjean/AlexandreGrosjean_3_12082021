@@ -311,6 +311,7 @@ footer {
       font-weight: 900;
       background: $color-heart-full;
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: 1.5s;
     }
@@ -319,19 +320,17 @@ footer {
 
 // menu-choice
 
-.info-menu {
   .info-choice {
     display: flex;
     justify-content: space-around;
   }
 
   .info-title {
-    // border-bottom: 4px rgb(166, 235, 208) solid;
     margin: 20px;
     padding: 0;
 
     h6 {
-    text-decoration: underline rgb(166, 235, 208) 5px;
+      text-decoration: underline rgb(166, 235, 208) 5px;
       font-size: 18px;
       font-weight: 500;
       margin: 0;
@@ -341,51 +340,63 @@ footer {
   }
 
   .menu-plat {
-    display: grid;
-    grid-template-columns: 4fr 1fr auto;
-    grid-template-rows: 80px;
-    grid-template-areas: "title price check";
-
+    display: flex;
+    justify-content: space-between;
     border-radius: 20px;
     box-shadow: 0 0 10px 0.3px grey;
-    margin: 20px;
-    width: 90%;
-    max-width: 400px;
-    text-align: left;
     background-color: white;
+    margin: 20px;
+    width: 400px;
+    max-width: 100%;
+    height: 70px;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .menu-name-price {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
     &:hover {
-      opacity: 0.8;
-    }
-
-    .menu-name {
-      grid-area: title;
-    }
-
-    p {
-      margin: 5px 10px;
-      padding: 2px;
-    }
-
-    .menu-price {
-      grid-area: price;
-      font-weight: 500;
-      padding-top: 45px;
-    }
-
-    .box-validator {
-      grid-area: check;
-      background-color: $color-check-box;
-      border-radius: 0 20px 20px 0;
-      width: 80px;
-    }
-
-    .choice-validator {
-        width: 30px;
-        margin: auto;
-        padding: 24px 0 0 0;
+      min-width: 320px;
+      transition-duration: 1s;
+      -webkit-transition-duration: 1s;
     }
   }
-}
+
+  .menu-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 70px;
+    white-space: nowrap;
+  }
+
+  p {
+    margin: 5px 10px;
+    padding: 2px;
+  }
+
+  .menu-price {
+    font-weight: 500;
+    padding-top: 32px;
+    text-align: center;
+  }
+
+  .box-validator {
+    min-width: 80px;
+    height: 70px;
+    background-color: $color-check-box;
+    border-radius: 0 20px 20px 0;
+
+    .choice-validator {
+      width: 30px;
+      margin: auto;
+      padding-top: 20px;
+    }
+  }
+
+  
 
 // button
 
@@ -457,4 +468,8 @@ footer {
     margin: 0;
     padding: 20px;
   }
+
+  // .menu-name-price {
+  //   flex-direction: column;
+  // }
 }
