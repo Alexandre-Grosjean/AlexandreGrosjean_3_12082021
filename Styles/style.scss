@@ -1,6 +1,8 @@
 @import "utils/_colors.scss";
 @import "utils/_card.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 a {
   text-decoration: none;
   color: black;
@@ -263,6 +265,11 @@ footer {
 
 // main page
 
+.full-page-menu {
+  background-color: rgb(247, 247, 247);
+}
+
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -283,18 +290,21 @@ footer {
     padding: 0 70px 0 20px;
     border-radius: 20px 20px 0 0;
     max-width: 100%;
-    background-color: white;
+    background-color: rgb(247, 247, 247);
 
-    h5 {
-      font-size: 20px;
+    .menu-main-title {
+      font-family: 'Shrikhand';
+      font-weight: 500;
+      font-size: 26px;
       text-align: left;
+      margin: 27px 0 27px -25px;
     }
 
     .fav-icon {
       display: inline-block;
       position: absolute;
       width: 30px;
-      margin: 33px 0 0 250px;
+      margin: 33px 0 0 300px;
       font-family: "Font Awesome 5 free";
     }
 
@@ -332,7 +342,7 @@ footer {
     h6 {
       text-decoration: underline rgb(166, 235, 208) 5px;
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 300;
       margin: 0;
       padding: 0;
       text-align: left;
@@ -366,18 +376,24 @@ footer {
   }
 
   .menu-name {
+    margin-top: 3px;
     text-overflow: ellipsis;
     overflow: hidden;
-    height: 70px;
+    height: 75px;
     white-space: nowrap;
   }
 
   p {
-    margin: 7px 10px;
+    margin: 5px 10px;
     padding: 2px;
   }
 
-  .test {
+  .menu-main {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .menu-sub {
     font-size: 16px;
     font-weight: 300;
   }
