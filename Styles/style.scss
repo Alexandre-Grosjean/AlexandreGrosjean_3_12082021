@@ -336,16 +336,26 @@ footer {
   }
 
   .info-title {
+    display: grid;
+    grid-template-columns: 30px 5px;
+    grid-template-rows: 30px 5px;
+    grid-template-areas: "name empty"
+                          "under-line empty";
     margin: 20px;
     padding: 0;
 
     h6 {
-      text-decoration: underline rgb(166, 235, 208) 5px;
+      grid-area: name;
       font-size: 18px;
       font-weight: 300;
       margin: 0;
       padding: 0;
       text-align: left;
+    }
+
+    .underline {
+      grid-area: under-line;
+      background-color: rgb(166, 235, 208);
     }
   }
 
