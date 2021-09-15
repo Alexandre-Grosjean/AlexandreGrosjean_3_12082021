@@ -498,17 +498,25 @@ p {
 .menu-main {
   font-size: 20px;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 0;
 }
 
 .menu-sub {
   font-size: 16px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 0;
 }
 
 .menu-price {
   font-weight: 500;
   padding-top: 32px;
   text-align: center;
+  width: auto;
+  margin-left: 0;
 }
 
 .box-validator {
