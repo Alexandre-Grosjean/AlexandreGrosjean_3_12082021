@@ -362,6 +362,7 @@ footer {
   .menu-plat {
     display: flex;
     justify-content: space-between;
+
     border-radius: 20px;
     box-shadow: 0 0 10px 0.3px grey;
     background-color: white;
@@ -415,32 +416,34 @@ footer {
   0% {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
+            opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+            opacity: 1;
   }
 }
 @keyframes slide-top {
   0% {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
+            opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+            opacity: 1;
   }
 }
+
+
 
   .menu-name-price {
     display: flex;
     justify-content: space-between;
-    min-width: 360px;
-    &:hover {
-      min-width: 280px;
-      transition-duration: 1s;
-      -webkit-transition-duration: 1s;
-    }
+    width: 360px;
+    min-width: 200px;
   }
 
   .menu-name {
@@ -459,31 +462,104 @@ footer {
   .menu-main {
     font-size: 20px;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0;
   }
 
   .menu-sub {
     font-size: 16px;
     font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0;
+
   }
 
   .menu-price {
     font-weight: 500;
     padding-top: 32px;
     text-align: center;
+    width: auto;
+    margin-left: 0;
   }
 
   .box-validator {
-    min-width: 80px;
+    display: none;
+    width: 80px;
     height: 70px;
     background-color: $color-check-box;
     border-radius: 0 20px 20px 0;
 
     .choice-validator {
       width: 30px;
-      margin: auto;
-      padding-top: 20px;
+      margin: 20px;
     }
   }
+
+  // hover animation
+
+  .menu-plat:hover .box-validator {
+    display: block;
+
+      -webkit-animation: slide-left 0.4s linear both;
+              animation: slide-left 0.4s linear both;
+    
+  }
+
+  .menu-plat:hover .menu-price {
+    -webkit-animation: slide-left 0.4s linear both;
+              animation: slide-left 0.4s linear both;
+  }
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.menu-plat:hover .choice-validator {
+    -webkit-animation: rotate-center 0.4s ease-in-out both;
+            animation: rotate-center 0.4s ease-in-out both;
+}
+
+ @-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
 
   
 
