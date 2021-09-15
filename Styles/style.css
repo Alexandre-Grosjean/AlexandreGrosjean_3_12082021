@@ -474,12 +474,8 @@ footer {
 .menu-name-price {
   display: flex;
   justify-content: space-between;
-  min-width: 360px;
-}
-.menu-name-price:hover {
-  min-width: 280px;
-  transition-duration: 1s;
-  -webkit-transition-duration: 1s;
+  width: 360px;
+  min-width: 200px;
 }
 
 .menu-name {
@@ -520,17 +516,73 @@ p {
 }
 
 .box-validator {
-  min-width: 80px;
+  display: none;
+  width: 80px;
   height: 70px;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
 }
 .box-validator .choice-validator {
   width: 30px;
-  margin: auto;
-  padding-top: 20px;
+  margin: 20px;
 }
 
+.menu-plat:hover .box-validator {
+  display: block;
+  -webkit-animation: slide-left 0.4s linear both;
+  animation: slide-left 0.4s linear both;
+}
+
+.menu-plat:hover .menu-price {
+  -webkit-animation: slide-left 0.4s linear both;
+  animation: slide-left 0.4s linear both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.menu-plat:hover .choice-validator {
+  -webkit-animation: rotate-center 0.4s ease-in-out both;
+  animation: rotate-center 0.4s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 .btn_cmd {
   border: 0px;
   border-radius: 20px;
