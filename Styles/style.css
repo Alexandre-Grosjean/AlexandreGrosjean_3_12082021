@@ -96,7 +96,7 @@ main {
   position: absolute;
 }
 .choice-bubble p {
-  margin: 4px 0 0 0;
+  margin: 3px 0 0 0;
 }
 
 .choice {
@@ -599,6 +599,7 @@ p {
 }
 
 body .loader {
+  animation: loader 1.5s linear;
   visibility: hidden;
   margin: 0;
   padding: 0;
@@ -612,6 +613,14 @@ body .loader {
   z-index: 999;
 }
 
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
 .loader-title {
   margin-top: 20%;
   font-size: 45px;
@@ -621,14 +630,14 @@ body .loader {
 }
 
 .loader-title::before {
-  margin: 70px 0 0 98px;
+  margin: 70px 0 0 97px;
   position: absolute;
   content: "";
-  border: 5px #9356dc solid;
+  border: 6px #f0f0f0 solid;
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  opacity: 0;
+  opacity: 0.4;
 }
 
 .loader-title::after {
