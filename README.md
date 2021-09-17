@@ -23,3 +23,5 @@ objectif :
 
 1- creation des web responsive mobile
 2- adapter le responsive pour les versions tablets et desktop
+3- creation d'animation sur carte/lien
+4- creation chargement de page
