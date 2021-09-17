@@ -679,6 +679,24 @@ body .loader {
     border-radius: 15px 15px 0 0;
   }
 
+  .link-card-restaurants {
+    width: 500px;
+  }
+
+  .img-card {
+    width: 500px;
+  }
+
+  .info-card {
+  grid-template-columns: 400px 100px;
+  width: 500px;
+  
+  }
+
+  .new {
+  margin-left: 410px;
+  }
+
   // menu-page
 
   .img-page {
