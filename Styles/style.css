@@ -245,7 +245,19 @@ main {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 1.5s;
+  animation: heart 1s;
+  -webkit-animation: heart 1s;
+}
+@keyframes heart {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 footer {
@@ -355,10 +367,22 @@ footer {
 .menu .page-title-menu .heart-icon:hover {
   font-weight: 900;
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 1.5s;
+  animation: heart 1s;
+  -webkit-animation: heart 1s;
+}
+@keyframes heart {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .info-choice {

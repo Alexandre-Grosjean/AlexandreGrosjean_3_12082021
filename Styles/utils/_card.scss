@@ -108,7 +108,23 @@
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      transition: 1.5s;
+      
+      animation: heart 1s; 
+      -webkit-animation: heart 1s; 
+    }
+
+    @keyframes heart {
+      0% {
+        opacity: 0.1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
   }
 }
